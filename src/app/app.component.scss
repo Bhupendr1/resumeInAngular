@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+    list-style: none;
+}
+
+body{
+    background: #c4c4c4;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.wrapper{
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px;
+    box-shadow: -3px -3px 20px #00000040,
+                 3px 3px 10px #00000040;
+}
+
+.wrapper .left{
+    width: 35%;
+    background: #262626;
+}
+
+.wrapper .left .image{
+    width: 100%;
+}
+
+.wrapper .left .image img{
+    display: block;
+    width: 100%;
+    /* height: 40vmin; */
+}
+
+.wrapper .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.wrapper .left .info{
+    color:#8d8d8d;
+}
+
+.wrapper .left .bottom{
+    padding: 20px 30px;
+}
+
+.wrapper .item{
+    padding: 20px 0;
+    border-bottom: 1px solid #0175b2;
+}
+
+.wrapper .item:last-child{
+    border-bottom: 0;
+}
+
+.wrapper .nameroll .name{
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.wrapper .nameroll .roll{
+    color: #84838b;
+}
+
+.wrapper .left .contact .info:last-child{
+    margin-top: 10px;
+}
+
+.wrapper .left .contact .subtitle{
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.wrapper .left .skills .skills_list{
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.wrapper .left .skills .skills_list .skills_bar p{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    margin: 5px 0 10px;
+}
+
+.wrapper .left .skills .skills_list .skills_bar p span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0175b2;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .right{
+    width: 65%;
+    padding: 20px 40px;
+}
+
+
+.wrapper .right .title{
+    color: #262626;
+}
+
+
+.wrapper .right .data{
+    display: flex;
+}
+
+.wrapper .right .data .year{
+    position: relative;
+    width: 115px;
+    padding-right: 35px;
+}
+
+.wrapper .right .data .content{
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100% - 115px);
+}
+
+.wrapper .right .data .year::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #0175b2;
+    border-radius: 50%;
+}
+
+.wrapper .right .data .year::after{
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 95%;
+    background: #0175b2;
+}
+
+.wrapper .right .data:last-child .year::after{
+    display: none;
+}
+
+.wrapper .right .info .language{
+    display: flex;
+}
+
+.wrapper .right .language .language{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wrapper .right .language .lan_bar p{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    margin: 5px 0 10px;
+}
+
+.wrapper .right .language .lan_bar p span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0175b2;
+}
+
+.wrapper .right .interests .info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.wrapper .right .interests .interests .int_icon{
+    font-size: 38px;
+    color: #0175b2;
+    margin-bottom: 10px;
+}
